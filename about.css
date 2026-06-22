@@ -1,0 +1,218 @@
+/* Base & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #242424;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header - matches index design */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #111111;
+    border-left: 20px solid aqua;
+    z-index: 100;
+}
+
+/* Typography */
+h1 {
+    color: aqua;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: aqua;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    font-size: 1rem;
+    padding-left: 10px;
+    color: azure;
+}
+
+.bodyp {
+    border-left: 10px solid aqua;
+    padding-left: 10px;
+    color: azure;
+}
+
+/* About Hero */
+.about-hero {
+    display: flex;
+    align-items: center;
+}
+
+.about-hero h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-hero h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: azure;
+    line-height: 1.4;
+}
+
+.about-hero p {
+    font-size: 1rem;
+    color: #888888;
+    line-height: 1.6;
+    border-left: 3px solid #333333;
+    padding-left: 12px;
+}
+
+/* Section Spacing */
+.journey, .skills, .interests, .future, #education, #timeline {
+    margin-top: 35px;
+}
+
+.journey p, .skills p, .interests p, .future p {
+    border-left: 10px solid aqua;
+    padding-left: 10px;
+    color: azure;
+}
+
+/* Education */
+.edu-item {
+    background-color: #eeeeee;
+    border-left: 4px solid #0066cc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.edu-item h3 {
+    margin-bottom: 8px;
+}
+
+.edu {
+    color: #666666;
+}
+
+/* Timeline */
+.timeline-item {
+    background-color: #eeeeee;
+    border-left: 4px solid #0066cc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.timeline-content h3 {
+    margin-bottom: 8px;
+}
+
+.timeline-year {
+    display: block;
+    font-size: 0.9rem;
+    color: #0066cc;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: #333333;
+    border: none;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        max-width: 100vw;
+        padding: 20px 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px;
+        border-left-width: 12px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .about-hero p {
+        font-size: 0.9rem;
+    }
+
+    pre {
+        font-size: 1rem;
+    }
+
+    .bodyp {
+        font-size: 0.95rem;
+    }
+
+    .edu-item,
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .edu,
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+}

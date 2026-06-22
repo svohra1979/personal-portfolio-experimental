@@ -1,0 +1,383 @@
+/* ==========================================================================
+   1. Reset & Base Styles
+   ========================================================================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #242424;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #111111;
+    border-left: 20px solid aqua;
+    z-index: 100;
+    
+}   /* room for the photo; match photo height */
+
+#hname{
+    color: aqua;
+}            
+
+.header-text {
+    grid-column: 2;
+    text-align: center;
+    
+}
+
+#photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+    min-height: 80vh;
+   
+}
+
+#heropre{
+    border-right: solid aqua 10px;
+    padding-right: 20px;
+    transform: translateX(5vw);
+}
+
+
+.hero-greeting {
+    font-size: 1.5rem;
+    color: azure;
+    margin-bottom: 0;
+}
+
+.hero-name {
+    color: aqua;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.hero-role {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: azure;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.hero-detail {
+    font-size: 1rem;
+    color: #888888;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding-left: 12px;
+    border-left: 3px solid #333333;
+}
+
+#hbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0.5rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid aqua;
+    border-radius: 4px;
+    background-color: aqua;
+    color: #111111;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: azure;
+    border-color: azure;
+    color: #111111;
+    text-decoration: none;
+}
+
+.hero-btn--outline {
+    background-color: transparent;
+    color: aqua;
+}
+
+.hero-btn--outline:hover {
+    background-color: aqua;
+    color: #111111;
+}
+
+/* ==========================================================================
+   2. Typography & Links
+   ========================================================================== */
+h2{
+    color: aqua;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+h3 {
+    color: #111111;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+h1{
+    color: #111111; 
+    font-weight: 700;
+    text-align: center;
+}
+#subtitle{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; margin-top: 0px; }
+h3 { font-size: 1.3rem; }
+
+p {
+    margin-bottom: 15px;
+    
+}
+.bodyp{
+    border-left: 10px solid aqua;
+    padding-left: 10px;
+    color: azure;
+
+}
+pre{
+    font-size: 1.5rem;
+     
+    padding-left: 10px;
+    color: azure;
+    
+
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-photo {
+    transform: translateX(-5vw);
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding-right: 30px;
+    border-radius: 30%;   /* circle */
+      /* centered above title */
+}
+/* ==========================================================================
+   3. Navigation
+   ========================================================================== */
+header p {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #333333;
+    padding: 10px;
+    z-index: 100;
+}
+nav a {
+    margin-right: 20px;
+    font-weight: 500;
+    
+    padding-left: 2 px;
+    padding-right: 2 px;
+}
+
+.navb{
+    background-color: #111111;
+}
+
+ .navp{
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #0066cc;
+}
+/* ==========================================================================
+   4. Project Cards & Lists
+   ========================================================================== */
+.project {
+    background-color: #eeeeee;
+    border-left: 4px solid #0066cc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.project h3 {
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: none; /* Removes default bullet points */
+}
+
+li {
+    margin-bottom: 8px;
+    color:azure
+}
+
+/* ==========================================================================
+   5. Footer
+   ========================================================================== */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   6. Mobile
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        max-width: 100vw;
+        padding: 20px 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px;
+        border-left-width: 12px;
+    }
+
+    .header-text {
+        text-align: left;
+    }
+
+    #hname {
+        font-size: 1.3rem;
+    }
+
+    #subtitle {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+        padding: 6px;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+
+    .navp {
+        font-size: 0.9rem;
+    }
+
+    #photo {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    #heropre {
+        transform: none;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .hero-greeting {
+        font-size: 1.2rem;
+    }
+
+    .hero-name {
+        font-size: 1.6rem;
+    }
+
+    .hero-role {
+        font-size: 1.1rem;
+    }
+
+    .hero-detail {
+        font-size: 0.9rem;
+        padding-left: 8px;
+    }
+
+    #hbuttons {
+        justify-content: center;
+    }
+
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .profile-photo {
+        transform: none;
+        width: 200px;
+        height: 200px;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .bodyp {
+        font-size: 0.95rem;
+    }
+
+    pre {
+        font-size: 1.1rem;
+    }
+
+    #about pre {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 35px;
+    }
+}

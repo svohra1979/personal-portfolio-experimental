@@ -1,0 +1,120 @@
+/* Header - right align nav */
+header {
+    justify-content: flex-end;
+}
+
+/* Contact Hero */
+.contact-hero {
+    display: flex;
+    align-items: center;
+}
+
+.contact-hero h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+.contact-hero pre {
+    font-size: 1rem;
+    color: #888888;
+    line-height: 1.6;
+    border-left: 3px solid #333333;
+    padding-left: 12px;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 35px;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactcard {
+    background-color: #eeeeee;
+    border-left: 4px solid #0066cc;
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.contactcard a {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid aqua;
+    border-radius: 4px;
+    background-color: aqua;
+    color: #111111;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contactcard a:hover {
+    background-color: azure;
+    border-color: azure;
+    color: #111111;
+    text-decoration: none;
+}
+
+.contactcard span {
+    color: inherit;
+}
+
+/* Closing CTA */
+.closing {
+    margin-top: 35px;
+}
+
+.closing h2 {
+    margin-bottom: 20px;
+}
+
+.closing pre {
+    font-size: 1rem;
+    color: #888888;
+    line-height: 1.6;
+    border-left: 3px solid #333333;
+    padding-left: 12px;
+}
+
+/* Ending */
+.ending {
+    margin-top: 35px;
+}
+
+.ending pre {
+    border-left: 10px solid aqua;
+    padding-left: 10px;
+    color: azure;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-hero pre,
+    .closing pre {
+        font-size: 0.9rem;
+    }
+
+    .contactcard a {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .ending pre {
+        font-size: 1rem;
+    }
+}

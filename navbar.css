@@ -1,0 +1,28 @@
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #333333;
+    padding: 10px;
+    z-index: 100;
+}
+nav a {
+    margin-right: 20px;
+    font-weight: 500;
+    
+    padding-left: 2 px;
+    padding-right: 2 px;
+}
+
+.navb{
+    background-color: #111111;
+}
+
+ .navp{
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #0066cc;
+}
