@@ -1,6 +1,6 @@
-/* Header - right align nav */
+/* Header - center nav */
 header {
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 /* Contact Hero */
@@ -98,6 +98,13 @@ header {
 
 /* Mobile */
 @media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 8px;
+        border-left-width: 12px;
+    }
+
     .contact-hero h1 {
         font-size: 1.8rem;
     }

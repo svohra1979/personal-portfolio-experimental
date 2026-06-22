@@ -173,7 +173,8 @@ footer {
 
     header {
         flex-wrap: wrap;
-        gap: 8px;
+        justify-content: center;
+        gap: 4px;
         padding: 8px;
         border-left-width: 12px;
     }
