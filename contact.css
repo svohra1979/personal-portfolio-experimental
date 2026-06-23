@@ -125,3 +125,24 @@ header {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    header {
+        border-left-width: 8px;
+        padding: 6px;
+        gap: 4px;
+    }
+
+    .contactcard {
+        padding: 15px;
+    }
+
+    .contactcard a {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .ending pre {
+        font-size: 0.9rem;
+    }
+}
